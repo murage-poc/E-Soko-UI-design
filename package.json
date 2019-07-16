@@ -1,0 +1,31 @@
+{
+  "name": "gulp_starter_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "keywords": [],
+  "author": "murage@mimidots.com",
+  "license": "MIT",
+  "browserslist ": [
+    "last 4 version",
+    "> 1%"
+  ],
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "umbrellajs": "^3.1.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.3.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "tsify": "^4.0.1",
+    "typescript": "^3.5.3",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
