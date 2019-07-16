@@ -49,7 +49,7 @@ function copyImages() {
 
 function sassTask(){
     return gulp.src(paths.sass.scr)
-        .pipe(sass())
+        .pipe(sass({includePaths:['node_modules']}))
         .pipe(autoprefixer({cascade:true}))
         .pipe(gulp.dest(paths.sass.dest))
 }
