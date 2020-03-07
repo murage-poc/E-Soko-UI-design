@@ -11,21 +11,21 @@ let vinylBuffer=require('vinyl-buffer');
 
 let paths={
     ts:{
-        scr:'./src/public/assets/ts/*.ts',
-        dest:'./dist/public/assets/js/',
-        entries:['./src/public/assets/ts/index.ts']
+        scr:'./assets/ts/*.ts',
+        dest:'./dist/assets/js/',
+        entries:['./assets/ts/index.ts']
     },
     sass:{
-        scr:'./src/public/assets/sass/*.sass',
-        dest:'./dist/public/assets/css/'
+        scr:'./assets/sass/*.sass',
+        dest:'./dist/assets/css/'
     },
     pages:{
-        scr:'./src/public/pages/*.html',
-        dest:'./dist/public/pages/'
+        scr:'./*.html',
+        dest:'./dist/'
     },
     images:{
-        scr:'./src/public/assets/images/*.*',
-        dest:'./dist/public/assets/images/'
+        scr:'./assets/images/*.*',
+        dest:'./dist/assets/images/'
     }
 };
 
