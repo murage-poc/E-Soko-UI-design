@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#59bd3c94">
+  <title>E-Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/order.css">
+</head>
+<body>
+
+<!--TOP NAVBAR -->
+<nav class="navbar">
+  <div class="nav-start">
+    <div class="nav-item">
+      <div class="nav-link nav-brand">
+        <span class="first">E-</span><span class="second">SOKO</span>
+      </div>
+    </div>
+  </div>
+  <div class="nav-end">
+
+    <div class="nav-item">
+      <div class="nav-link">
+        <i class="fa fa-user-o"></i> Sign In
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--CONTENT WRAPPER-->
+<div class="wrapper">
+  <div class="main-content">
+    <section class="personal-details-section">
+    <h3 class="section-title column is-12">Personal details</h3>
+    <div class="field column is-6">
+      <label for="firstname">First name</label>
+      <p class="control">
+        <input type="text" class="input" id="firstname">
+      </p>
+    </div>
+    <div class="field column is-6">
+      <label for="lastname">Last name</label>
+      <p class="control">
+        <input type="text" class="input" id="lastname">
+      </p>
+    </div>
+    <div class="field column is-6">
+      <label for="email">Email</label>
+      <p class="control">
+        <input type="text" class="input" id="email">
+      </p>
+    </div>
+    <div class="field column is-6">
+      <label for="mobile">Mobile</label>
+      <p class="control">
+        <input type="text" class="input" id="mobile">
+      </p>
+    </div>
+    </section>
+
+    <section class="main-address-section">
+      <h3 class="section-title column is-12">Your address</h3>
+
+      <div class="field column is-6">
+        <label for="addr-apartment">Apartment/suite</label>
+        <p class="control">
+          <input type="text" class="input" id="addr-apartment">
+        </p>
+      </div>
+      <div class="field column is-6">
+        <label for="addr-address">Address</label>
+        <p class="control">
+          <input type="text" class="input" id="addr-address">
+        </p>
+      </div>
+      <div class="field column is-3">
+        <label for="addr-zip">Zip code</label>
+        <p class="control">
+          <input type="text" class="input" id="addr-zip">
+        </p>
+      </div>
+      <div class="field column is-3">
+        <label for="addr-city">City/County</label>
+        <p class="control">
+          <input type="text" class="input" id="addr-city">
+        </p>
+      </div>
+
+      <div class="field column is-6">
+        <label for="addr-country">Country</label>
+        <p class="control">
+          <input type="text" class="input" id="addr-country">
+        </p>
+      </div>
+    </section>
+
+    <div class="column is-12 question">
+      <label for="diff-shipping-address">
+        <input type="checkbox" class="checkbox" id="diff-shipping-address">
+        I have a different shipping address
+      </label>
+    </div>
+    <section class="shipping-address-section no-display">
+      <h3 class="section-title column is-12">Shipping address</h3>
+      <div class="field column is-6">
+        <label for="ship-firstname">First name</label>
+        <p class="control">
+          <input type="text" class="input" id="ship-firstname">
+        </p>
+      </div>
+      <div class="field column is-6">
+        <label for="ship-lastname">Last name</label>
+        <p class="control">
+          <input type="text" class="input" id="ship-lastname">
+        </p>
+      </div>
+      <div class="field column is-6">
+        <label for="ship-apartment">Apartment/suite</label>
+        <p class="control">
+          <input type="text" class="input" id="ship-apartment">
+        </p>
+      </div>
+      <div class="field column is-6">
+        <label for="ship-address">Address</label>
+        <p class="control">
+          <input type="text" class="input" id="ship-address">
+        </p>
+      </div>
+      <div class="field column is-3">
+        <label for="ship-zip">Zip code</label>
+        <p class="control">
+          <input type="text" class="input" id="ship-zip">
+        </p>
+      </div>
+      <div class="field column is-3">
+        <label for="ship-city">City/County</label>
+        <p class="control">
+          <input type="text" class="input" id="ship-city">
+        </p>
+      </div>
+      <div class="field column is-6">
+        <label for="ship-country">Country</label>
+        <p class="control">
+          <input type="text" class="input" id="ship-country">
+        </p>
+      </div>
+    </section>
+    <div class="action-buttons column is-12">
+      <button class="button to-payment">Continue to payment</button>
+    </div>
+  </div>
+  <div class="cart-info">
+    <h5 class="section-title">Items in the basket</h5>
+    <div class="product-list">
+      <div class="product-item">
+        <div class="name">
+          Lettuce
+        </div>
+        <div class="total">Ksh 600.00</div>
+      </div>
+    </div>
+    <div class="total-calculation">
+      <div class="sub-total">
+        <span class="subtitle">Subtotal</span>
+        <span class="value">KSh 2999.00</span>
+      </div>
+      <div class="shipping-fee">
+        <span class="subtitle">Shipping fee</span>
+        <span class="value">KSh 0.00</span>
+      </div>
+    <div class="total">
+      <span class="subtitle">Total</span>
+      <span class="value">KSh 600.00</span>
+    </div>
+  </div>
+  </div>
+
+</div>
+<script src="assets/js/app-bundle.js"></script>
+
+</body>
+</html>

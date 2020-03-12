@@ -1,0 +1,50 @@
+@import "default-theme"
+
+.navbar
+  display: flex
+  flex-direction: row
+  box-shadow: -4px 0px 1px 0px rgba(0, 0, 0, .7)
+  height: 60px
+  padding-left: 15px
+  padding-right: 15px
+  justify-content: space-between
+
+  .nav-start,
+  .nav-center,
+  .nav-end
+    display: flex
+    grid-template-columns: repeat(auto-fill, minmax(120px,1fr))
+    text-align: center
+    align-items: center
+
+  .nav-item
+    .nav-link
+
+      padding-top: 10px
+      padding-right: 18px
+      padding-left: 18px
+      padding-bottom: 10px
+      .fa
+        font-size: 23px
+
+    &:hover
+      cursor: pointer
+.nav-brand
+  font-size: 19px
+  font-weight: bold
+  .second
+    color: $primary-color
+
+@media only screen and (max-width: 600px)
+  .navbar
+    padding-left: 0
+    padding-right: 0
+    position: sticky
+    top: 0
+    background-color: white
+    height: 65px
+    .main-search
+      display: none
+    .nav-link
+      .icon
+        font-size: 15px

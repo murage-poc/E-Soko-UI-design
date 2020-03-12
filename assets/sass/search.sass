@@ -1,0 +1,24 @@
+@import "default-theme"
+
+.main-search
+  position: relative
+  .search-icon
+    position: absolute
+    color: $primary-color
+    font-size: 18px
+    left: 10px
+    top: 8px
+  .search
+    padding: .15em 10px .15em 3em
+    font-size: 15px
+    border: 1px solid $main-search-border-color
+    color: $main-search-text-color
+    border-radius: 3px
+    line-height: 2em
+    background-color: $main-search-background-color
+    position: relative
+    width: 320px
+    &::placeholder
+      color: $main-search-placeholder-color
+      text-transform: none
+      letter-spacing: 1.5px

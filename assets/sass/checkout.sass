@@ -1,0 +1,89 @@
+@import "minireset"
+@import "nav-bar"
+@import "search"
+@import "top-cart-menu"
+@import "icons"
+@import "utilities"
+@import "button"
+
+$product-item-border-color: #c3c3a4b5
+
+.wrapper
+  padding: 15px
+  .title
+    font-size: 29px
+    line-height: 2.1
+    padding-bottom: 12px
+  .cart
+    padding-right: 50px
+    padding-left: 50px
+  .product-list
+    border-bottom: solid 1px $product-item-border-color
+    display: grid
+    width: 100%
+    grid-template-rows: repeat(auto-fill,auto)
+    .list-titles
+      display: grid
+      grid-template-columns: 2fr 1fr 1fr 0.3fr
+      align-items: center
+      padding-bottom: 16px
+    .product-item
+      border-top: solid 1px $product-item-border-color
+      display: grid
+      grid-template-columns: 2fr 1fr 1fr 0.3fr
+      align-items: center
+      .product
+        display: grid
+        grid-template-columns: 100px 1fr
+        align-items: center
+        .featured-image
+          padding: 5px
+          img
+            width: 100%
+            margin: 0 auto
+            display: block
+            border-radius: 100px
+        .name
+          overflow: hidden
+          white-space: pre-line
+.total-calculation
+  width: 100%
+  text-align: right
+  padding-top: 16px
+  padding-bottom: 16px
+  font-size: 15px
+  .subtitle
+    font-size: 14px
+    font-weight: 500
+    padding-right: 8px
+.action-buttons
+  text-align: right
+  padding-top: 8px
+  .back
+    text-transform: uppercase
+    border: solid 1px $primary-color
+    color: $primary-color
+    background-color: white
+  .checkout
+    text-transform: uppercase
+    border: solid 1px $primary-color
+    color: white
+    background-color: $primary-color
+
+@media only screen and (max-width: 600px)
+  .wrapper
+    font-size: small
+  .cart
+    padding: 0 !important
+  .list-titles
+    grid-template-columns: 1fr 1fr 1fr 1fr !important
+    justify-items: center
+  .product-item
+    grid-template-columns: 1fr 1fr 1fr 1fr !important
+    justify-items: center
+    .product
+      display: block !important
+      width: 100px
+      grid-template-columns: none !important
+      .name
+        display: none

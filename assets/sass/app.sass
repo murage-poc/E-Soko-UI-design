@@ -1,10 +1,37 @@
-@import 'bulma/sass/utilities/all'
-@import 'bulma/sass/base/all'
-@import 'bulma/sass/components/navbar'
-@import 'bulma/sass/grid/columns'
-@import 'bulma/sass/elements/button'
-@import 'bulma/sass/components/card'
-@import 'bulma/sass/components/dropdown'
-@import 'bulma/sass/form/shared'
-@import 'bulma/sass/form/select'
-@import 'bulma/sass/form/tools'
+@import "minireset"
+@import "nav-bar"
+@import "search"
+@import "top-cart-menu"
+@import "product-card"
+@import "side-nav"
+@import "icons"
+@import "button"
+.wrapper
+  min-height: 94vh
+  display: grid
+  grid-template-columns: 18% 82%
+  .side-nav
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.7)
+    background-color: $side-background-color
+  .main-content
+    background-color: $main-content-background-color
+    width: 100%
+    padding: 12px
+
+.products-list
+  display: grid
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr))
+  grid-row-gap: 12px
+  grid-column-gap: 12px
+  padding: 13px
+  padding-top: 22px
+  padding-bottom: 22px
+  background-color: transparent
+
+@media only screen and (max-width: 768px)
+  .wrapper
+    grid-template-columns: 100%
+  .products-list
+    background-color: transparent
+
+

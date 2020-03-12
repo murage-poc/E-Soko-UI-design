@@ -1,0 +1,44 @@
+@import "default-theme"
+.side-nav
+  display: flex
+  flex-direction: column
+  padding: 8px
+  .section-title
+    margin-top: 21px
+    padding: 14px
+    width: 100%
+    font-weight: 500
+    font-size: 18px
+    line-height: 1.2
+    background-color:  $side-nav-section-background-color
+    color:  $side-nav-section-text-color
+    border-bottom: 1px solid $side-nav-section-border-color
+.nav
+  display: flex
+  flex-direction: column
+  list-style: none
+  background-color: $side-nav-category-background-color
+  border: solid 2px $side-nav-category-nav-border-color
+  border-top: none
+  .nav-item
+    width: 100%
+    .nav-link
+      font-size: 14px
+      display: block
+      padding-top: 8px
+      padding-bottom: 8px
+      padding-left: 8px
+      padding-right: 8px
+      color: $side-nav-category-item-color
+      &:hover
+        text-decoration: underline
+    &.active
+      background-color: #dddddd
+    &:not(:last-child)
+      border-bottom: solid 1px $side-nav-category-item-border-color
+
+
+
+@media only screen and (max-width: 768px)
+  .side-nav
+    display: none
