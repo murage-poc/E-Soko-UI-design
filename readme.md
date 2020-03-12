@@ -1,5 +1,7 @@
-#### E-STORE UI DEMO
+#### E-SOKO UI DEMO
+
 ![Screenshot from 2020-03-12 23-58-01.png](https://i.loli.net/2020/03/13/gyqn2IwxaEkB5lr.png)
+
 A UI demo for a simple e-commerce site.
  **Project architecture structure**
  ```
