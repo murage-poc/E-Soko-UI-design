@@ -10,12 +10,10 @@
   "author": "murage@mimidots.com",
   "license": "MIT",
   "browserslist ": [
-    "last 4 version",
+    "last 5 version",
     "> 1%"
   ],
-  "dependencies": {
-    "bulma": "^0.7.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^16.5.0",
     "gulp": "^4.0.2",
@@ -23,7 +21,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "tsify": "^4.0.1",
-    "typescript": "^3.7.5",
+    "typescript": "^3.8.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   }
